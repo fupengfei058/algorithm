@@ -15,7 +15,7 @@ class InsertValue {
 public:
 	ListNode* insert(vector<int> A, vector<int> nxt, int val) {
     	ListNode* ret=new ListNode(val);
-        if(A.size()==0){          
+        if(A.size()==0){
             //ret->next=ret;
             return ret;
         }
