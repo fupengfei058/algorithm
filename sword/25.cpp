@@ -23,7 +23,7 @@ public:
         TreeNode* pleft = Convert(pRootOfTree->left);
         if(pleft != NULL){
         	leftLast->right = pRootOfTree;
-        	pRootOfTree->pleft = leftLast;
+        	pRootOfTree->left = leftLast;
         }
         leftLast = pRootOfTree;
         TreeNode* pright = Convert(pRootOfTree->right);
