@@ -3,27 +3,39 @@
 /*输入描述:输入一个字符串,长度不超过9(可能有字符重复),字符只包括大小写字母。*/
 class Solution {
 public:
-	void PermutationHelp(vector<string> &ans, int k, string str) //遍历第k位的所有可能
-	{
-	    if(k == str.size() - 1)
-	        ans.push_back(str);
-	    unordered_set<char> us;  //记录出现过的字符
-	    sort(str.begin() + k, str.end());  //保证按字典序输出
-	    for(int i = k; i < str.size(); i++)
-	    {
-	        if(us.find(str[i]) == us.end()) //只和没交换过的换
-	        {  
-	            us.insert(str[i]);
-	            swap(str[i], str[k]);
-	            PermutationHelp(ans, k + 1, str);
-	            swap(str[i], str[k]);  //复位
-	        }
-	    }
-	}
- 
-	vector<string> Permutation(string str) {
-	    vector<string> ans;
-	    PermutationHelp(ans, 0, str);
-	    return ans;
+	vector<string> Permutation(string str) {  
+        vector<string> result;   //创建字符串数组  
+        int len = str.length();  //求出字符串长度，作为参数传递控制循环次数  
+        if(!len) return result;  //当输入为空时，直接返回  
+		BubbleSort(str,0,len-1);
+        Permutations(result, str, 0, len);  
+        return result;  
+    }
+	void Permutations(vector<string>&result, string str,int index, int len){  
+		//当索引指向字符串尾部时，将str压入数组     
+		if (index == len){//index==len,说明首位置已经是末尾了，这时的递归输入已经只有一个元素了 
+		    result.push_back(str);  
+		    return;  
+		}
+		for (int i = index; i < len; ++i) {  
+		    if (i!=index && str[i]== str[index]) continue;// 保证当输入多个重复字符时，不会重复计算  
+		    swap(str[i],str[index]);//每一次，交换第i个位置和首位置的元素
+		    Permutations(result, str, index+1, len);
+		}
+	}  
+	void BubbleSort(string &A,int left,int high){
+		int p,i;
+		bool flag;
+		int N = A.length();
+		for(p=N-1; p >= 0; p--){
+			flag = false;
+			for(i=0; i<p; i++){
+				if(A[i]>A[i+1]){
+					swap(A[i],A[i+1]);
+					flag = true;
+				}
+			}
+			if(flag == false) break;
+		}
 	}
 };
