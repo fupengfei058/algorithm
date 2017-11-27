@@ -4,7 +4,7 @@
 class Solution {
 public:
     int MoreThanHalfNum_Solution(vector<int> numbers) {
-    	if(numbers == NULL) return 0;
+    	if(numbers.empty()) return 0;
     	int result = numbers[0];
     	int times = 1;
     	for(int i = 0; i < numbers.size(); i++){
