@@ -35,21 +35,21 @@ int CalcMaxGap(const int* A,int size)
 	int i;
 	for(int i=1;i<size;i++)
 	{
-	   if(nMax<A[i])
-               nMax = A[i];
-		  else if(nMin > A[i])
-			  nMin = A[i];
+		if(nMax<A[i])
+		    nMax = A[i];
+		else if(nMin > A[i])
+			nMin = A[i];
 	}
 	//依次将数据放入
 	int delta = nMax-nMin;
 	int nBucket;//某数应该在哪个桶中
 	for(i=0;i<size;i++)
 	{
-	   nBucket = (A[i]-nMin)*size/delta;
-	   if(nBucket>=size){
-	     nBucket = size-1;
-	   }
-	   pBucket[nBucket].Add(A[i]);
+		nBucket = (A[i]-nMin)*size/delta;
+		if(nBucket>=size){
+			nBucket = size-1;
+		}
+	    pBucket[nBucket].Add(A[i]);
 	}
 	//计算有效桶的间隔
 	i = 0;//第一个肯定是有效的
