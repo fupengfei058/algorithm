@@ -3,22 +3,23 @@
 class Solution {
 public:
     vector<int> FindNumbersWithSum(vector<int> array,int sum) {
-    	vector<int> ret;
-    	if(array.size() < 2 || sum <= 0) return ret;
-        int i = 0;
-        int j = array.size()-1;
-        while(i < j){
-        	int tmp = array[i] + array[j];
-        	if(tmp == sum){
-        		ret.push_back(i);
-        		ret.push_back(j);
-        		break;
-        	}else if(tmp < sum){
-        		i++;
-        	}else{
-        		j--;
-        	}
-        }
-        return ret;
+		vector<int> result;
+        int length = array.size();
+        int start = 0;
+        int end = length - 1;
+        while (start < end)
+        {
+            if (array[start] + array[end] == sum)
+            {
+                result.push_back(array[start]);
+                result.push_back(array[end]);
+                break;
+            }
+            else if (array[start] + array[end] < sum)
+                start++;
+            else
+                end--;
+        }
+        return result;
     }
 };
