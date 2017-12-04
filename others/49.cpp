@@ -19,7 +19,7 @@ struct TreeNode {
 */
 class Balance {
 public:
-    bool checkTree(TreeNode* root ,int &high)
+    bool checkTree(TreeNode* root, int &high)
     {
         if(root == NULL)
         {
@@ -27,12 +27,12 @@ public:
             return true;
         }
         int leftHigh,rightHigh;
-        if(!checkTree(root->left,leftHigh) || !checkTree(root->right,rightHigh))
+        if(!checkTree(root->left, leftHigh) || !checkTree(root->right, rightHigh))
         {
             return false;
         }
-        if(abs(leftHigh-rightHigh)>1)return false;
-        high = (leftHigh>rightHigh?leftHigh:rightHigh)+1;
+        if(abs(leftHigh - rightHigh) > 1) return false;
+        high = (leftHigh > rightHigh ? leftHigh : rightHigh) + 1;
         return true;
     }
     bool isBalance(TreeNode* root) {
