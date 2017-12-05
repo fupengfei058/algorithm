@@ -44,7 +44,7 @@
 41. 输入一个递增排序的数组和一个数字S，在数组中查找两个数，使得他们的和正好是S，如果有多对数字的和等于S，输出两个数的乘积最小的。
 
 ### [Leetcode](https://github.com/fupengfei058/algorithm/tree/master/Leetcode)
-
+1. xxx
 ### [经典题型](https://github.com/fupengfei058/algorithm/tree/master/%E7%BB%8F%E5%85%B8%E9%A2%98%E5%9E%8B)
 1. 确定字符互异
 2. 原串翻转
