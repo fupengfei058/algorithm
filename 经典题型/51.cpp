@@ -14,11 +14,19 @@ struct TreeNode {
             val(x), left(NULL), right(NULL) {
     }
 };
-
 class LongestDistance {
 public:
     int depth(TreeNode* root,int &dep)
     {
-    	
+        if(root==NULL) return 0;
+        int left = depth(root->left,dep);
+        int right = depth(root->right,dep);
+        dep = dep > (left+right+1)?dep:(left+right+1);
+        return left>right?(left+1):(right+1);
+    }
+    int findLongest(TreeNode* root) {
+        int dep = 0;
+        depth(root,dep);
+        return dep;
     }
 };
