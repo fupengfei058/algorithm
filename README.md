@@ -1,5 +1,5 @@
 # algorithm
-* [剑指offer](https://github.com/fupengfei058/algorithm/tree/master/%E5%89%91%E6%8C%87offer)
+### [剑指offer](https://github.com/fupengfei058/algorithm/tree/master/%E5%89%91%E6%8C%87offer)
 1. 在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。
 2. 请实现一个函数，将一个字符串中的空格替换成“%20”。
 3. 输入一个链表，从尾到头打印链表每个节点的值。
@@ -42,9 +42,9 @@
 40. 输出所有和为S的连续正数序列。序列内按照从小至大的顺序，序列间按照开始数字从小到大的顺序
 41. 输入一个递增排序的数组和一个数字S，在数组中查找两个数，使得他们的和正好是S，如果有多对数字的和等于S，输出两个数的乘积最小的。
 
-* [Leetcode](https://github.com/fupengfei058/algorithm/tree/master/Leetcode)
+### [Leetcode](https://github.com/fupengfei058/algorithm/tree/master/Leetcode)
 
-* [经典题型](https://github.com/fupengfei058/algorithm/tree/master/%E7%BB%8F%E5%85%B8%E9%A2%98%E5%9E%8B)
+### [经典题型](https://github.com/fupengfei058/algorithm/tree/master/%E7%BB%8F%E5%85%B8%E9%A2%98%E5%9E%8B)
 1. 确定字符互异
 2. 原串翻转
 3. 确定两串乱序同构
