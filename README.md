@@ -69,10 +69,11 @@
 66. 输入一个链表，反转链表后，输出链表的所有元素。
 
 ### [Leetcode](https://github.com/fupengfei058/algorithm/tree/master/Leetcode)
-1. Two Sum
-2. Add Two Numbers
-3. Longest Substring Without Repeating Characters
-4. Median of Two Sorted Arrays
+1. Two Sum(Easy)
+2. Add Two Numbers(Medium)
+3. Longest Substring Without Repeating Characters(Medium)
+4. Median of Two Sorted Arrays(Hard)
+5. Longest Palindromic Substring(Medium)
 
 ### [经典题型](https://github.com/fupengfei058/algorithm/tree/master/%E7%BB%8F%E5%85%B8%E9%A2%98%E5%9E%8B)
 1. 确定字符互异
