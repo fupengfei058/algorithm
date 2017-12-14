@@ -75,6 +75,10 @@
 4. Median of Two Sorted Arrays(Hard)
 5. Longest Palindromic Substring(Medium)
 6. ZigZag Conversion(Medium)
+7. Reverse Integer(Easy)
+8. String to Integer (atoi)(Medium)
+9. Palindrome Number(Easy)
+10. Regular Expression Matching(Hard)
 
 ### [经典题型](https://github.com/fupengfei058/algorithm/tree/master/%E7%BB%8F%E5%85%B8%E9%A2%98%E5%9E%8B)
 1. 确定字符互异
