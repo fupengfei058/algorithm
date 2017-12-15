@@ -79,6 +79,11 @@
 8. String to Integer (atoi)(Medium)
 9. Palindrome Number(Easy)
 10. Regular Expression Matching(Hard)
+11. Container With Most Water(Medium)
+12. Integer to Roman(Medium)
+13. Roman to Integer(Easy)
+14. Longest Common Prefix(Easy)
+15. 3Sum(Medium)
 
 ### [经典题型](https://github.com/fupengfei058/algorithm/tree/master/%E7%BB%8F%E5%85%B8%E9%A2%98%E5%9E%8B)
 1. 确定字符互异
