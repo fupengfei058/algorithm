@@ -1,28 +1,21 @@
 /*Generate Parentheses:Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.*/
+//一开始left = n，right = 0；当left还剩余左括号数大于0的时候，添加左括号，并将left – 1，right + 1；
+//当right目前还需要的右括号数大于0的时候，添加右括号，并将right – 1；
+//当left和right都等于0的时候，表示当前是一个符合格式条件的字符串，将该字符串cur放入result数组中，最后返回result。
 class Solution {
 public:
     vector<string> generateParenthesis(int n) {
-        vector<string> rs;  
-        string s;  
-        genParenthesis(rs, s, n, n);  
-        return rs;
+        dfs("", n, 0);
+        return result;
     }
-    void genParenthesis(vector<string> &rs, string &s, int left, int right)
-	{
-		if (left==0)
-		{
-			rs.push_back(s);
-			rs.back().append(right, ')');
-			return;
-		}
-		s.push_back('(');
-		genParenthesis(rs, s, left-1, right);
-		s.pop_back();
-		if (left < right)
-		{
-			s.push_back(')');
-			genParenthesis(rs, s, left, right-1);
-			s.pop_back();
-		}
-	}
+private:
+    vector<string> result;
+    void dfs(string cur, int left, int right) {
+        if (left == 0 && right == 0) {
+            result.push_back(cur);
+            return;
+        }
+        if (left > 0) dfs(cur + "(", left - 1, right + 1);
+        if (right > 0) dfs(cur + ")", left, right - 1);
+    }
 };
