@@ -92,6 +92,9 @@
 21. Merge Two Sorted Lists(Easy)
 22. Generate Parentheses(Medium)
 23. Merge k Sorted Lists(Hard)
+24. Swap Nodes in Pairs(Medium)
+25. Reverse Nodes in k-Group(Hard)
+26. Remove Duplicates from Sorted Array(Easy)
 
 ### [经典题型](https://github.com/fupengfei058/algorithm/tree/master/%E7%BB%8F%E5%85%B8%E9%A2%98%E5%9E%8B)
 1. 确定字符互异
