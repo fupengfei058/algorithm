@@ -100,6 +100,7 @@
 29. Divide Two Integers(Medium)
 30. Substring with Concatenation of All Words(Hard)
 31. Next Permutation(Medium)
+32. Longest Valid Parentheses(Hard)
 
 ### [经典题型](https://github.com/fupengfei058/algorithm/tree/master/%E7%BB%8F%E5%85%B8%E9%A2%98%E5%9E%8B)
 1. 确定字符互异
