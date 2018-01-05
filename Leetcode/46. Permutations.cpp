@@ -1,4 +1,5 @@
 /*Permutations:Given a collection of distinct numbers, return all possible permutations.*/
+//交换法的思路是for(i = start to end)，循环中: swap (第start个和第i个)，递归调用(start+1)，swap back
 class Solution {
 public:
     vector<vector<int>> permute(vector<int>& nums) {
