@@ -1,5 +1,5 @@
 # algorithm
-#### 说明：1. 一些题目的详细描述或算法思路以代码注释呈现，可以进入题目里面查看；2. repository持续更新中。
+#### 说明：1. 一些题目的详细描述或算法思路以代码注释呈现，可以进入题目里面查看；2. repo持续更新中。
 ### [剑指offer](https://github.com/fupengfei058/algorithm/tree/master/%E5%89%91%E6%8C%87offer)
 1. 在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。
 2. 请实现一个函数，将一个字符串中的空格替换成“%20”。
@@ -129,6 +129,7 @@
 58. Length of Last Word(Easy)
 59. Spiral Matrix II(Medium)
 60. Permutation Sequence(Medium)
+61. Rotate List(Medium)
 
 ### [经典题型](https://github.com/fupengfei058/algorithm/tree/master/%E7%BB%8F%E5%85%B8%E9%A2%98%E5%9E%8B)
 1. 确定字符互异
